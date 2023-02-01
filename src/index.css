@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@400;500&family=Roboto&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: whitesmoke;
+  font-family: 'Montserrat', sans-serif;
+}
+header{
+  background-color: rgb(185, 66, 22);
+  color: #fff;
+  padding: 1rem 4rem ;
+}
+header nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul{
+  display: flex;
+  list-style: none;
+}
+nav ul li{
+  padding: 1rem 3rem;
+  margin-right: 2rem;
+}
+nav ul li.bg{
+  background-color: rgb(25, 63, 59);
+  border-radius: 4rem;
+  transition: 0.5s ease-in-out;
+}
+nav ul li.bg:hover{
+  opacity: 0.75;
+}
+nav ul li.border{
+  border: 2px solid rgb(25, 63, 59);
+  border-radius: 4rem;
+  transition: 0.5s ease-in-out;
+}
+nav ul li.border:hover{
+  opacity: 0.75;
+}
+nav ul a{
+  color: #fff;
+  text-decoration: none;
+}
+
+/* showcase styling */
+.showcase{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 3rem auto;
+}
+.showcase_text{
+  flex: 1;
+  margin-left: 2rem;
+  line-height: 2;
+}
+.showcase_text h1{
+  font-size: 1.5rem;
+  margin-top: -2rem;
+}
+.showcaseImg_div{
+    flex: 1;
+}
+.showcaseImg_div img{
+  border-radius: 2rem 10rem;
+  width: 100%;
+}
+/* footer */
+.footer{
+  background-color: rgb(185, 66, 22);
+  font-weight: 500;
+  color: #fff;
+  padding: 1rem 0.5rem;
+  text-align: center;
+  margin-top: 5rem;
+}
