@@ -6,8 +6,8 @@
     padding: 1rem 0;
 }
 .transaction_section {
-    width: 700px;
-    margin: auto;
+    width: 350px;
+    margin: -3rem auto 0;
     line-height: 2;
 }
 
@@ -42,4 +42,13 @@
 }
 .fetch:hover{
     opacity: 0.75;
+}
+@media (min-width: 764px){
+    
+.transaction_section {
+    width: 700px;
+    margin: auto;
+    line-height: 2;
+ }
+    
 }

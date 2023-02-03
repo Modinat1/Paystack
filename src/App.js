@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from "react";
-import Navbar from "./components/Navbar";
+// import Navbar from "./components/Navbar/Navbar";
+import Navbar from "./components/Navbar/Navbar";
 import Showcase from "./components/Showcase";
 import Payment from "./components/Payment";
 import Transaction from "./components/Transaction";
@@ -7,6 +8,7 @@ import Footer from "./components/Footer";
 import axios from "axios";
 
 function App() {
+  const [showBurger, setShowBurger] = useState(false)
   const [transactionData, setTransactionData] = useState([]);
 	// const [isloading, setisloading] = useState(false);
   const [fetch, setFetch] = useState(false)
@@ -36,7 +38,7 @@ function App() {
 
   return (
     <div className="App">
-     <Navbar/>
+     <Navbar showBurger={showBurger} setShowBurger={setShowBurger}/>
      <Showcase/>
      <Payment/>
      <Transaction transactionData={transactionData} fetch={fetch} setFetch={setFetch}/>
